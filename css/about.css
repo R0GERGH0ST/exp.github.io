@@ -125,7 +125,8 @@
     left: 0;
 }
 
-@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3){
+@media only screen 
+   and (min-width : 320px) {
     .logo2 img{
         position: absolute;
         top: 640px;
@@ -142,8 +143,8 @@
         width: 1000px;
         height: 1000px;
         position: absolute;
-        top: -1%;
-        left: -20%;
+        top: 0%;
+        left: -10%;
         border-radius: 50%;
         transform: rotate(0deg);
         transition: 3s;
