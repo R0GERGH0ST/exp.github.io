@@ -124,3 +124,58 @@
     top: 0;
     left: 0;
 }
+
+@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3){
+    .logo2 img{
+        position: absolute;
+        top: 640px;
+        left: 55px;
+        z-index: 10;
+    }
+    .nav-links{
+        flex: 1;
+        text-align: center;
+        margin-top: 10vh;
+        zoom: 200%;
+    }
+    #circle{
+        width: 1000px;
+        height: 1000px;
+        position: absolute;
+        top: -1%;
+        left: -20%;
+        border-radius: 50%;
+        transform: rotate(0deg);
+        transition: 3s;
+        /* background: #ccc; */
+        zoom: 100%;
+    }
+    .mobile{
+        width: 200px;
+        position: absolute;
+        top: 30%;
+        left: 20%;
+        transform: translateY(-50);
+        z-index: 1;
+    }
+    .controls{
+        position: absolute;
+        right: 5%;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: center;
+        zoom: 165%;
+    }
+ 
+    .overlay{
+        width: 0;
+        height: 0;
+        border-top: 500px solid #fff;
+        border-right: 500px solid transparent;
+        border-bottom: 500px solid #fff;
+        border-left: 500px solid #fff;
+        position: absolute;
+        top: 0;
+        left: -105;
+    }
+}
